@@ -1,1 +1,3 @@
+#! /bin/bash
+
 traceroute slash16.fr

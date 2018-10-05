@@ -1,4 +1,5 @@
-#!/bin/bash
+#! /bin/bash
+
 echo "0 0 * * * $(pwd)/04.sh" >> /etc/crontab
 
 IFS= read -r line
