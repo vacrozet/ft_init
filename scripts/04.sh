@@ -1,9 +1,9 @@
 #! /bin/bash
-
-echo "0 0 * * * $(pwd)/04.sh" >> /etc/crontab
+# 
+# echo "0 0 * * * sh /root/crontab_check/04.sh" >> /etc/crontab
 
 IFS= read -r line
-md5='md5 /etc/crontab | awk '{print$1}''
+md5=md5 /etc/crontab | awk '{print$1}'
 
 $IFS < $md5
 if [ $md5 == $line ]
